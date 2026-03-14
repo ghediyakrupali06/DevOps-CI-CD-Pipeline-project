@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/ghediyakrupali06/devops-cicd-pipeline-project.git'
+                git 'git 'https://github.com/ghediyakrupali06/DevOps-CI-CD-Pipeline-project.git''
             }
         }
 
