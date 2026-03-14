@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/ghediyakrupali06/DevOps-CI-CD-Pipeline-project.git'
+                git url: 'https://github.com/ghediyakrupali06/DevOps-CI-CD-Pipeline-project.git', branch: 'main'
             }
         }
 
@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('Run Container') {
+        stage('Run Docker Container') {
             steps {
                 bat 'docker run -d -p 5000:5000 devops-app'
             }
